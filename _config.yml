@@ -22,14 +22,14 @@ repository: "Jac-Zac/Jac-Zac.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile.png"
-  name: "Your Sidebar Name"
+  avatar: "Profile_2.png"
+  name: "Jacopo Zacchigna"
   pronouns: # example: "she/her"
-  bio: "Short biography for the left-hand sidebar"
-  location: "Earth"
-  employer: "Red Brick University"
+  bio: "Master Student in AI passionate about Deep Learning"
+  location: "Trieste, Italy"
+  employer: "University of Trieste"
   uri: # URL
-  email: "none@example.org"
+  email: "jaczac2002@gmail.com"
 
   # Academic websites
   academia: # URL
