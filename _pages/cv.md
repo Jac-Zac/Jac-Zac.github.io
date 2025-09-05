@@ -11,35 +11,31 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Data Science and Artificial Intelligence, University of Trieste, 2024-ongoing
+  * Focus: Machine Learning, Bayesian Statistics, Parallel Computing
+* B.S. in Artificial Intelligence and Data Analytics, University of Trieste, 2022-2024
+  * Thesis: _Toward automated extraction of metadata from herbarium specimen labels_
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* May 2024 - Jan 2025: AI Consultant
+  * Obloo
+  * Duties: Designed foundational GenAI Retrieval-Augmented Generation (RAG) systems, guided development of machine learning solutions, mentored interns
+  * Focus: GenAI, RAG systems, ML solutions
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages
+  * Python, C/C++, Bash
+* Machine Learning & AI
+  * PyTorch, Deep Learning
+  * Bayesian Methods
+  * Computer Vision
+  * Natural Language Processing
+* Tools & Technologies
+  * MPI, Slurm (Parallel Computing)
+  * Git, Docker
+  * Data Science & Statistical Analysis
 
 Publications
 ======
@@ -61,4 +57,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Research Projects: BayesianFlow project applying Bayesian inference to generative models
+* Professional mentoring of interns in AI and machine learning
