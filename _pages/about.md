@@ -22,9 +22,9 @@ latest_posts:
   enabled: false
 ---
 
-I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **Mechanistic Interpretability** and **AI safety**.
+I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **deep learning** and **mech interp**.
 
-I want to understand _how_ LLMs work internally and how we can use that knowledge — not just what they output. My current research is on interpretability of language models.
+I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future.
 
 ---
 

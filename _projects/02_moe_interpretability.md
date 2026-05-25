@@ -2,7 +2,7 @@
 layout: page
 title: MoE Interpretability
 description: Adapting HeadPursuit / SOMP to classify expert specialization in Mixture-of-Experts LLMs
-img:
+img: assets/img/moe_evr_heatmap.png
 importance: 2
 category: research
 ---
