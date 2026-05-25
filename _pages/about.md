@@ -28,17 +28,9 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 ---
 
-**Recent Research — SPAR Fellow, Implicit Personalization**
+**Current work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization) — probing the internal user models LLMs build (persona vectors, steering, Doc-to-LoRA). See [the project page](/projects/) for details.
 
-I recently conducted a research fellowship with the [SPAR](https://sparai.org) program, working on [Implicit Personalization](https://github.com/implicit-personalization) and exploring questions such as:
-
-> When an LLM answers a question, it has already formed beliefs about _who it is talking to_ — their age, expertise, politics, values. How is that user model encoded? Where does it live? Can the user inspect or rewrite it?
-
-The work spans three connected projects: **`persona-data`** (the SynthPersona dataset — 1,000 personas × 788k QA rows), **`persona-vectors`** (hidden-state direction extraction, probing, PCA/UMAP analysis, and steering on Gemma-2-27B-IT), and **`persona-ui`** (a Streamlit app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) for interactive exploration). I also experimented with **`persona-2-lora`** (Doc-to-LoRA evaluation for persona internalization).
-
-📊 Poster: [slides](https://docs.google.com/presentation/d/1qphCwoW-cTKJP4Nj1yXUO_OxkB0yzcqfNSs5czGOkuY/edit?slide=id.p1#slide=id.p1)
-
-I'm also working on **mechanistic interpretability of Mixture-of-Experts** models (OLMoE, GPT-OSS) — adapting the HeadPursuit / SOMP framework to classify per-expert semantic specialization.
+In parallel: **mechanistic interpretability of Mixture-of-Experts** models (OLMoE, GPT-OSS) — adapting HeadPursuit / SOMP to expert specialization.
 
 ---
 
