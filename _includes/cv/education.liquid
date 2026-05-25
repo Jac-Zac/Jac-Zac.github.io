@@ -65,7 +65,9 @@
           {% endif %}
 
           {% if entry.institution %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+              {{ entry.institution | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
           {% endif %}
 
           {% if entry.area %}

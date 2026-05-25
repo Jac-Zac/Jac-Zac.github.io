@@ -60,8 +60,18 @@ layout: default
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
+        {% comment %} RenderCV v2 renames: label -> headline; summary moved into a section. Support both. {% endcomment %}
+        {% assign cv_title = cv.headline | default: cv.label %}
+        {% assign cv_summary = cv.summary %}
+        {% if cv_summary == null or cv_summary == '' %}
+          {% assign summary_section = cv.sections.Summary | default: cv.sections.summary %}
+          {% if summary_section.size > 0 %}
+            {% assign cv_summary = summary_section | join: ' ' %}
+          {% endif %}
+        {% endif %}
+
         <!-- Header/Contact Information -->
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+        {% if cv.name or cv_title or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless">
@@ -71,10 +81,10 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
                 </tr>
               {% endif %}
-              {% if cv.label %}
+              {% if cv_title %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv_title }}</td>
                 </tr>
               {% endif %}
               {% if cv.email %}
@@ -89,7 +99,12 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
                 </tr>
               {% endif %}
-              {% if cv.address %}
+              {% if cv.location %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.location }}</td>
+                </tr>
+              {% elsif cv.address %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
@@ -113,10 +128,10 @@ layout: default
         {% endif %}
 
         <!-- Summary -->
-        {% if cv.summary %}
+        {% if cv_summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>{{ cv_summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 
@@ -142,10 +157,13 @@ layout: default
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
 
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% comment %} Skip sections we render elsewhere (Experience/Volunteer combined above, Summary above the sections). {% endcomment %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Summary' or section_title == 'summary' %}
             {% continue %}
           {% endif %}
+
+          {% comment %} Detect entry shape so we can pick a sensible renderer for non-standard section titles. {% endcomment %}
+          {% assign first_entry = section_entries | first %}
 
           <a class="anchor" id="{{ section_title | slugify }}"></a>
           <div class="card mt-3 p-3">
@@ -174,10 +192,18 @@ layout: default
                 {% include cv/certificates.liquid %}
               {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
                 {% assign entries = section_entries %}
-                {% include cv/projects.liquid %}
+                {% if first_entry.company or first_entry.position %}
+                  {% include cv/experience.liquid %}
+                {% else %}
+                  {% include cv/projects.liquid %}
+                {% endif %}
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}
+              {% elsif first_entry.company or first_entry.position %}
+                {% comment %} Any other section that looks like work experience (Research, Internships, …). {% endcomment %}
+                {% assign entries = section_entries %}
+                {% include cv/experience.liquid %}
               {% else %}
                 <!-- Generic section -->
                 {% for entry in section_entries %}
@@ -189,6 +215,10 @@ layout: default
                     <div class="card-text font-weight-light">
                       <strong>{{ entry.label }}:</strong> {{ entry.details }}
                     </div>
+                  {% elsif entry %}
+                    <p class="card-text font-weight-light">
+                      {{ entry | markdownify | remove: '<p>' | remove: '</p>' }}
+                    </p>
                   {% endif %}
                 {% endfor %}
               {% endif %}

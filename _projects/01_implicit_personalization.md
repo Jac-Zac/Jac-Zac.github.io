@@ -7,7 +7,7 @@ importance: 1
 category: research
 ---
 
-LLMs quietly form internal representations of *who they're talking to* — guesses about a user's age, expertise, political leaning, or values — and condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded and how they can be detected and analyzed.
+LLMs quietly form internal representations of _who they're talking to_ — guesses about a user's age, expertise, political leaning, or values — and condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded and how they can be detected and analyzed.
 
 The work spans three connected codebases:
 

@@ -7,7 +7,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpeg
   image_circular: false
   more_info: >
     <p>Trieste, Italy</p>
@@ -24,7 +24,7 @@ latest_posts:
 
 I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **Mechanistic Interpretability** and **AI safety**.
 
-I want to understand *how* LLMs work internally and how we can use that knowledge — not just what they output. My current research is on interpretability of language models.
+I want to understand _how_ LLMs work internally and how we can use that knowledge — not just what they output. My current research is on interpretability of language models.
 
 ---
 
@@ -32,7 +32,7 @@ I want to understand *how* LLMs work internally and how we can use that knowledg
 
 I recently conducted a research fellowship with the [SPAR](https://sparai.org) program, working on [Implicit Personalization](https://github.com/implicit-personalization) and exploring questions such as:
 
-> When an LLM answers a question, it has already formed beliefs about *who it is talking to* — their age, expertise, politics, values. How is that user model encoded? Where does it live? Can the user inspect or rewrite it?
+> When an LLM answers a question, it has already formed beliefs about _who it is talking to_ — their age, expertise, politics, values. How is that user model encoded? Where does it live? Can the user inspect or rewrite it?
 
 The work spans three connected projects: **`persona-data`** (the SynthPersona dataset — 1,000 personas × 788k QA rows), **`persona-vectors`** (hidden-state direction extraction, probing, PCA/UMAP analysis, and steering on Gemma-2-27B-IT), and **`persona-ui`** (a Streamlit app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) for interactive exploration). I also experimented with **`persona-2-lora`** (Doc-to-LoRA evaluation for persona internalization).
 
