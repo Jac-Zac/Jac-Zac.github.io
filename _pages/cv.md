@@ -1,12 +1,20 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-cv_pdf: /assets/rendercv/rendercv_output/Jacopo_Zacchigna_CV.pdf
-cv_format: rendercv # options: rendercv, jsonresume
-description: Master's student in Data Science & AI · Mechanistic interpretability, HPC, computer vision. CV rendered with RenderCV from <code>_data/cv.yml</code>.
-toc:
-  sidebar: left
+description: My CV in PDF form.
 ---
+
+{% assign cv_pdf = "/assets/rendercv/rendercv_output/Jacopo_Zacchigna_CV.pdf" | relative_url %}
+
+<p class="mt-3">
+  <a class="btn btn-primary" href="{{ cv_pdf }}" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download PDF
+  </a>
+</p>
+
+<object data="{{ cv_pdf }}" type="application/pdf" width="100%" height="900px" style="border: 1px solid var(--global-divider-color); border-radius: 4px;">
+  <p>Your browser can't display the embedded PDF. <a href="{{ cv_pdf }}">Download it instead</a>.</p>
+</object>

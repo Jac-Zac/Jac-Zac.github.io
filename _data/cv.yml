@@ -2,8 +2,9 @@
 cv:
   name: Jacopo Zacchigna
   headline: Master's student in Data Science & AI
-  email: jaczac2002@gmail.com
-  location: Trieste, Italy
+  email: jacopozac@icloud.com
+  phone: tel:+39-392-242-8077
+  location: Trieste, TS, Italy
   website: https://jac-zac.github.io/
   social_networks:
     - network: GitHub
@@ -13,7 +14,7 @@ cv:
 
   sections:
     Summary:
-      - Master's student in Data Science and Artificial Intelligence with research experience in mechanistic interpretability, computer vision, and generative models. Strong foundation in statistics, mathematics, and computer science. Published computer vision work in Plants (MDPI). Interested in interpretability, advancing deep learning theory, and applied research in real-world systems and HPC.
+      - Master's student in Data Science & Artificial Intelligence with research experience in mechanistic interpretability, computer vision, and generative models. Strong foundation in statistics, mathematics, and computer science. Published computer vision work in *Plants*. Interested in interpretability, advancing deep learning theory and applied research in real-world systems and HPC.
 
     Education:
       - institution: "[University of Trieste](https://www.units.it/)"
@@ -23,7 +24,7 @@ cv:
         start_date: "2024-09"
         end_date: "2026-09"
         highlights:
-          - "Courses: Probabilistic ML, Advanced Deep Learning, NLP, RL, Advanced HPC, XAI, Theory of Deep Neural Networks"
+          - Probabilistic ML, Advanced Deep Learning, NLP, RL, Advanced HPC, XAI, Theory of Deep Neural Networks, Unsupervised
 
       - institution: "[University of Trieste](https://www.units.it/)"
         location: Trieste, Italy
@@ -32,51 +33,41 @@ cv:
         start_date: "2021-09"
         end_date: "2024-07"
         highlights:
-          - "Thesis: Toward automated extraction of metadata from herbarium specimen labels (published in Plants, MDPI)"
+          - Built strong foundations in math, statistics, machine learning, and core CS, with experience in model training and evaluation
 
-    Research:
-      - company: "[Implicit Personalization — SPAR Program](https://github.com/implicit-personalization)"
+    Projects & Outside Experience:
+      - company: "[Monitoring and Attributing Implicit Personalization in Conversational Agents](https://github.com/implicit-personalization)"
         position: Research Fellow
         location: Remote
         start_date: "2026-02"
         end_date: "2026-05"
         highlights:
-          - Conducted experiments on persona-vectors extracted from LLM activations of rich synthetic personas (SynthPersona) using nnsight and nnterp
-          - Worked on evaluation for Doc-to-LoRA for Synthetic Persona across templated attributes vs. full biography
-          - Built an interactive UI (Streamlit / HF Spaces) for persona-vector extraction and analysis
+          - Conducted experiments on persona-vectors extracted from activations of rich persona (SynthPersona) using NNsight and nnterp
+          - Worked on evaluation for Doc-to-Lora for Synthetic Persona on templated attributes vs full biography
+          - Created an interactive UI with support for persona-vector extraction, analyses
 
-    Projects:
-      - company: "[BayesianFlow](https://github.com/Jac-Zac/BayesianFlow)"
+      - company: "[BayesianFlow — Uncertainty Estimation in Generative Models](https://github.com/Jac-Zac/BayesianFlow)"
         position: Personal Research Project
         start_date: "2025-06"
         end_date: "2025-07"
         highlights:
-          - Extended BayesDiff from diffusion to flow matching models, achieving 5x faster generation than DDIM
-          - Integrated Last Layer Laplace Approximation into U-Net for pixel-wise uncertainty estimation
+          - Extended BayesDiff from diffusion to flow matching models, achieving 5× faster generation than DDIM with comparable quality
+          - Integrated Last Layer Laplace Approximation into U-Net for pixel-wise uncertainty estimation, producing interpretable confidence maps
+          - Conducted comparative analysis of flow matching and diffusion models, assessing computational efficiency and uncertainty propagation
 
-    Experience:
+    Professional Experience:
       - company: "[Obloo](https://obloo.vc)"
         position: AI Consultant
         location: Trieste, Italy
         start_date: "2024-05"
         end_date: "2025-01"
         highlights:
-          - Mentored 5 interns in AI research & engineering, leading a 50% increase in team productivity
+          - Mentored 5 interns in AI research & engineering practices, leading a 50% increase in team productivity
           - Designed GenAI Retrieval-Augmented Generation (RAG) systems for knowledge retrieval from company data lake
-          - Led ML research prototypes bridging academic methods with production workflows
+          - Led ML research prototypes bridging academic methods with production workflows, contributing to 2 new products adopted company-wide
 
     Skills:
-      - label: ML & Interpretability
-        details: PyTorch, NNsight / nnterp, TransformerLens, Hugging Face, Bayesian Inference, Computer Vision, NLP
-      - label: HPC & Systems
-        details: CUDA, OpenMP, MPI, SIMD, Slurm, Singularity
+      - label: Skills
+        details: Deep Learning, Generative Models, Bayesian Inference, Research, Python, C/C++, Computer Vision, Data Science, Linux/Unix, Natural Language Processing (NLP), PyTorch, R, Docker, High Performance Computing (HPC), ML, Machine Learning, data mining, algorithm development, NumPy, CUDA, GPU
       - label: Languages
-        details: Python, C/C++, Bash, R
-      - label: Tools
-        details: Git, Docker, uv
-
-    Languages:
-      - label: Italian
-        details: Native
-      - label: English
-        details: C1 (Advanced Proficiency)
+        details: Italian, English
