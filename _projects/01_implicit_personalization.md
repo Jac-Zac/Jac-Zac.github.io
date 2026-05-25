@@ -2,7 +2,7 @@
 layout: page
 title: Implicit Personalization
 description: Monitoring and attributing the user models LLMs silently build — SPAR research fellowship
-img: assets/img/implicit_personalization.png
+img: assets/img/persona_icon.png
 importance: 1
 category: research
 ---
@@ -14,6 +14,8 @@ The work spans three connected codebases:
 **`persona-data`** — Dataset utilities for **SynthPersona**: 1,000 synthetic personas × 788k QA rows (explicit + implicit, FRQ + MCQ) on the [HF Hub](https://huggingface.co/datasets/implicit-personalization/synth-persona). Includes leakage-aware train/test splits.
 
 **`persona-vectors`** — Extract per-persona hidden-state directions from LLMs (e.g. Gemma-2-27B-IT) using `nnsight` / `nnterp`, then use them for probing, PCA / UMAP analysis, and inference-time steering. Extracted vectors released on the Hub: [synth-persona-vectors](https://huggingface.co/datasets/implicit-personalization/synth-persona-vectors).
+
+{% include figure.liquid path="assets/img/persona_vector_extraction.png" class="img-fluid rounded z-depth-1 my-3" alt="Persona vector extraction pipeline" %}
 
 **`persona-ui`** — A Streamlit web app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) that exposes the whole pipeline: chat with persona-steered models, run extraction, train probes, visualize projections.
 
