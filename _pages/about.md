@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow · Mechanistic Interpretability
+  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow
 
 profile:
   align: right
@@ -36,6 +36,6 @@ In parallel: **mechanistic interpretability of Mixture-of-Experts** models (OLMo
 
 **Background** · B.S. and M.S. at the University of Trieste (2021–2026) · AI Consultant at [Obloo](https://obloo.vc) (2024–2025) · Published in [MDPI Plants](https://www.mdpi.com/2223-7747/15/4/637)
 
-**Tooling** · PyTorch · NNsight / nnterp · TransformerLens · Hugging Face · CUDA · OpenMP · Slurm · Python · C/C++
+**Tooling** · PyTorch · NNsight / nnterp · Hugging Face · CUDA · OpenMP · Slurm · Python · C/C++
 
 🇮🇹 Italian (native) · 🇬🇧 English (C1)
