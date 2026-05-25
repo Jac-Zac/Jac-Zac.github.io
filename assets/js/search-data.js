@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Master&#39;s student in Data Science &amp; AI · Mechanistic interpretability, HPC, computer vision. CV rendered with RenderCV from _data/cv.yml.",
+          description: "My CV in PDF form.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -443,14 +443,14 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/CV.pdf", "_blank");
+          window.open("/assets/rendercv/rendercv_output/Jacopo_Zacchigna_CV.pdf", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6A%61%63%7A%61%63%32%30%30%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%6A%61%63%6F%70%6F%7A%61%63@%69%63%6C%6F%75%64.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-github',

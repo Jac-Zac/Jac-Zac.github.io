@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Jac-Zac.github.io/sitemap.xml
+Sitemap: https://jac-zac.github.io/sitemap.xml
