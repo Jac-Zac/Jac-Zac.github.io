@@ -2,33 +2,48 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow · Mechanistic Interpretability
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.png
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Trieste, Italy</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **Mechanistic Interpretability** and **AI safety**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I want to understand *how* LLMs work internally and how we can use that knowledge — not just what they output. My current research is on interpretability of language models.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+---
+
+**Recent Research — SPAR Fellow, Implicit Personalization**
+
+I recently conducted a research fellowship with the [SPAR](https://sparai.org) program, working on [Implicit Personalization](https://github.com/implicit-personalization) and exploring questions such as:
+
+> When an LLM answers a question, it has already formed beliefs about *who it is talking to* — their age, expertise, politics, values. How is that user model encoded? Where does it live? Can the user inspect or rewrite it?
+
+The work spans three connected projects: **`persona-data`** (the SynthPersona dataset — 1,000 personas × 788k QA rows), **`persona-vectors`** (hidden-state direction extraction, probing, PCA/UMAP analysis, and steering on Gemma-2-27B-IT), and **`persona-ui`** (a Streamlit app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) for interactive exploration). I also experimented with **`persona-2-lora`** (Doc-to-LoRA evaluation for persona internalization).
+
+📊 Poster: [slides](https://docs.google.com/presentation/d/1qphCwoW-cTKJP4Nj1yXUO_OxkB0yzcqfNSs5czGOkuY/edit?slide=id.p1#slide=id.p1)
+
+I'm also working on **mechanistic interpretability of Mixture-of-Experts** models (OLMoE, GPT-OSS) — adapting the HeadPursuit / SOMP framework to classify per-expert semantic specialization.
+
+---
+
+**Background** · B.S. and M.S. at the University of Trieste (2021–2026) · AI Consultant at [Obloo](https://obloo.vc) (2024–2025) · Published in [MDPI Plants](https://www.mdpi.com/2223-7747/15/4/637)
+
+**Tooling** · PyTorch · NNsight / nnterp · TransformerLens · Hugging Face · CUDA · OpenMP · Slurm · Python · C/C++
+
+🇮🇹 Italian (native) · 🇬🇧 English (C1)
