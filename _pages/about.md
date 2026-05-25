@@ -8,9 +8,9 @@ subtitle: >
 profile:
   align: right
   image: prof_pic.jpeg
-  image_circular: false
+  image_circular: true
   more_info: >
-    <p>Trieste, Italy</p>
+    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Trieste, Italy</p>
 
 selected_papers: true
 social: true
@@ -28,7 +28,7 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 ---
 
-**Current work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization) — probing the internal user models LLMs build (persona vectors, steering, Doc-to-LoRA). See [the project page](/projects/) for details.
+**Recent work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization) — probing the internal user models LLMs build (persona vectors). See [the project page](/projects/) for details.
 
 In parallel: **mechanistic interpretability of Mixture-of-Experts** models (OLMoE, GPT-OSS) — adapting HeadPursuit / SOMP to expert specialization.
 
