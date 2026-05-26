@@ -28,9 +28,9 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 ---
 
-**Recent work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization) — probing the internal user models LLMs build (persona vectors). See [the project page](/projects/) for details.
+**Recent work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization). Probing the internal user models LLMs build (persona vectors). See [the project page](/projects/) for details.
 
-In parallel: **mechanistic interpretability of Mixture-of-Experts** models (OLMoE, GPT-OSS) — adapting HeadPursuit / SOMP to expert specialization.
+In parallel, I worked on mechanistic interpretability of **Mixture-of-Experts** models (OLMoE, GPT-OSS), focusing on adapting HeadPursuit and SOMP to study expert specialization.
 
 ---
 
