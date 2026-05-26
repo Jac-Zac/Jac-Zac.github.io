@@ -11,4 +11,4 @@ category: ml
 
 A **Last Layer Laplace Approximation** is integrated into the U-Net to produce pixel-wise uncertainty estimates during generation, yielding interpretable confidence maps alongside generated images. Experiments on MNIST and Fashion-MNIST assess both the quality of uncertainty estimates and the computational efficiency gap between diffusion and flow matching.
 
-🔗 [GitHub](https://github.com/Jac-Zac/BayesianFlow)
+🔗 [GitHub](https://github.com/Jac-Zac/BayesianFlow) · 📊 [Slides](https://canva.link/vteuehldupg5bv3)
