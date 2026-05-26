@@ -7,7 +7,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.png
+  image: jacopo.png
   image_circular: true
   more_info: >
     <p><i class="fa-solid fa-location-dot"></i>&nbsp; Trieste, Italy</p>
