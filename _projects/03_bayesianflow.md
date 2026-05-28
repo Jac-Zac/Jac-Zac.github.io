@@ -7,7 +7,7 @@ importance: 1
 category: ml
 ---
 
-**BayesianFlow** extends [BayesDiff](https://arxiv.org/abs/2306.10173) from diffusion models to **Flow Matching**, achieving **5× faster generation** than DDIM at comparable quality.
+**BayesianFlow** extends [BayesDiff](https://arxiv.org/pdf/2310.11142) from diffusion models to **Flow Matching**, achieving **5× faster generation** than DDIM at comparable quality.
 
 A **Last Layer Laplace Approximation** is integrated into the U-Net to produce pixel-wise uncertainty estimates during generation, yielding interpretable confidence maps alongside generated images. Experiments on MNIST and Fashion-MNIST assess both the quality of uncertainty estimates and the computational efficiency gap between diffusion and flow matching.
 
