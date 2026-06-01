@@ -7,6 +7,9 @@ on:
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-citations:
     runs-on: ubuntu-latest
@@ -58,8 +61,20 @@ jobs:
           else
             echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
             echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
+            exit $status
           fi
           set -e
+
+      - name: Validate citations.yml size
+        run: |
+          echo "🧪 Validating citations.yml size..."
+          lines=$(wc -l < _data/citations.yml)
+          echo "📝 citations.yml line count: $lines"
+          if [ "$lines" -lt 1000 ]; then
+            echo "❌ citations.yml is unexpectedly small; refusing to commit a likely partial scrape."
+            echo "❌ citations.yml is unexpectedly small; refusing to commit a likely partial scrape." >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
 
       - name: Save new citations.yml hash
         id: after
