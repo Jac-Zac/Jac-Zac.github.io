@@ -34,7 +34,7 @@ In parallel, I have been working on mechanistic interpretability of **Mixture-of
 
 ---
 
-**Background** · B.S. and M.S. at the University of Trieste (2021–2026) · AI Consultant at [Obloo](https://obloo.vc) (2024–2025) · Published in [MDPI Plants](https://www.mdpi.com/2223-7747/15/4/637)
+**Background** · B.S. and M.S. at the University of Trieste (2021–2026) · AI Consultant at [Obloo](https://obloo.vc) (2024–2025) · Published in [Plants](https://www.mdpi.com/2223-7747/15/4/637)
 
 **Tooling** · PyTorch · NNsight / nnterp · Hugging Face · CUDA · OpenMP · Slurm · Python · C/C++
 
