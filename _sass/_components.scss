@@ -92,6 +92,16 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.post-header {
+  .post-title {
+    margin-bottom: 0.6rem;
+  }
+  .desc {
+    margin-top: 0;
+    color: var(--global-text-color-light);
+  }
+}
+
 // CV
 
 .cv {
@@ -177,23 +187,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 
     a {
       img {
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 0.75rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 0.5rem;
       }
 
       svg {
-        width: 2.2rem;
-        height: 2.5rem;
-        margin-bottom: 0.4rem;
+        width: 1.6rem;
+        height: 1.8rem;
+        margin-bottom: 0.3rem;
 
         image {
-          width: 2.2rem;
-          height: 2.2rem;
+          width: 1.6rem;
+          height: 1.6rem;
         }
       }
 

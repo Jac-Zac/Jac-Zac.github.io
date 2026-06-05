@@ -15,7 +15,6 @@ Hand-optimized **Causal Multi-Head Self-Attention (CMHSA)** written from scratch
 | OpenMP (EPYC 7H12, 128c)   | **~94× speedup** vs single-thread (~73% efficiency)    |
 | Single-thread (EPYC 9374F) | **~23× speedup** from compiler flags + stride padding  |
 
-
 Three different machines: the A100 GPU (Cineca), and two Orfeo CPU partitions — single-thread on a **Zen 4 EPYC 9374F (Genoa)**, multicore strong scaling on a **128-core Zen 2 EPYC 7H12**. GPU/multicore config: `batch=4, n_heads=32, seq_len=4096, head_dim=128` (single-thread uses `batch=1, n_heads=4`).
 
 ### Single-threaded: the compiler flag that mattered
