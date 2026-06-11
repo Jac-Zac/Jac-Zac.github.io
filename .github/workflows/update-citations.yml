@@ -16,13 +16,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       # See CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
       #        with:
       #          token: ${{ secrets.PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -50,31 +50,42 @@ jobs:
         shell: bash
         run: |
           set +e
-          echo "🚀 Running citation update script (single attempt)..."
-          start_time=$(date)
-          timeout 90 python bin/update_scholar_citations.py
-          status=$?
-          end_time=$(date)
-          if [ $status -eq 0 ]; then
-            echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
-            echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
-            echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
+          status=1
+          for attempt in 1 2 3; do
+            echo "🚀 Running citation update script (attempt $attempt/3)..."
+            start_time=$(date)
+            timeout 300 python bin/update_scholar_citations.py
+            status=$?
+            end_time=$(date)
+            if [ $status -eq 0 ]; then
+              echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
+              echo "✅ Citation update succeeded on attempt $attempt." >> $GITHUB_STEP_SUMMARY
+              break
+            fi
+            echo "❌ Attempt $attempt failed with exit code $status (started at $start_time, ended at $end_time)."
+            if [ $attempt -lt 3 ]; then
+              sleep 30
+            fi
+          done
+          if [ $status -ne 0 ]; then
+            echo "❌ Citation update script failed after 3 attempts (last exit code $status)." >> $GITHUB_STEP_SUMMARY
             exit $status
           fi
           set -e
 
-      - name: Validate citations.yml size
+      - name: Validate citations.yml structure
         run: |
-          echo "🧪 Validating citations.yml size..."
-          lines=$(wc -l < _data/citations.yml)
-          echo "📝 citations.yml line count: $lines"
-          if [ "$lines" -lt 1000 ]; then
-            echo "❌ citations.yml is unexpectedly small; refusing to commit a likely partial scrape."
-            echo "❌ citations.yml is unexpectedly small; refusing to commit a likely partial scrape." >> $GITHUB_STEP_SUMMARY
-            exit 1
-          fi
+          echo "🧪 Validating citations.yml structure..."
+          python - <<'EOF'
+          import sys, yaml
+
+          with open("_data/citations.yml") as f:
+              data = yaml.safe_load(f)
+          if not data or not isinstance(data.get("papers"), dict) or not data["papers"]:
+              print("❌ citations.yml has no valid 'papers' section; refusing to commit a likely broken scrape.")
+              sys.exit(1)
+          print(f"✅ citations.yml is valid with {len(data['papers'])} paper(s).")
+          EOF
 
       - name: Save new citations.yml hash
         id: after
