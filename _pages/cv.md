@@ -7,7 +7,7 @@ nav_order: 4
 description: My CV in PDF form.
 ---
 
-{% assign cv_pdf = "/assets/rendercv/rendercv_output/Jacopo_Zacchigna_CV.pdf" | relative_url %}
+{% assign cv_pdf = "/assets/pdf/CV.pdf" | relative_url %}
 
 <p class="mt-3">
   <a class="btn btn-primary" href="{{ cv_pdf }}" target="_blank" rel="noopener noreferrer">
