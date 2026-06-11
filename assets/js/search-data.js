@@ -433,7 +433,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/rendercv/rendercv_output/Jacopo_Zacchigna_CV.pdf", "_blank");
+          window.open("/assets/pdf/CV.pdf", "_blank");
         },
       },{
         id: 'social-email',
