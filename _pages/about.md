@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow
+  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow (Spring 2026)
 
 profile:
   align: right
@@ -22,13 +22,13 @@ latest_posts:
   enabled: false
 ---
 
-I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **deep learning** and **mech interp**.
+I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **deep learning** and **mechanistic interpretability**.
 
-I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future.
+I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to collaborating on research in these areas. Feel free to <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>.
 
 ---
 
-**Recent work** · [SPAR](https://sparai.org) fellow on [Implicit Personalization](https://github.com/implicit-personalization). I worked on probing internal user representations in LLMs (persona vectors). See [the project page](/projects/) for details.
+**Recent work** · [SPAR](https://sparai.org) Research Fellow (Feb–May 2026) on [Implicit Personalization](https://github.com/implicit-personalization). I worked on probing internal user representations in LLMs (persona vectors). See [the project page](/projects/) for details.
 
 In parallel, I have been working on mechanistic interpretability of **Mixture-of-Experts** models (OLMoE, GPT-OSS), focusing on adapting HeadPursuit and SOMP to study expert specialization.
 

@@ -46,7 +46,7 @@ cv:
           - Worked on evaluation for Doc-to-Lora for Synthetic Persona on templated attributes vs full biography
           - Created an interactive UI with support for persona-vector extraction, analyses
 
-      - company: "[BayesianFlow — Uncertainty Estimation in Generative Models](https://github.com/Jac-Zac/BayesianFlow)"
+      - company: "[BayesianFlow: Uncertainty Estimation in Generative Models](https://github.com/Jac-Zac/BayesianFlow)"
         position: Personal Research Project
         start_date: "2025-06"
         end_date: "2025-07"
