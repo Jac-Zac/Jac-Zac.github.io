@@ -400,7 +400,7 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "projects-implicit-personalization",
           title: 'Implicit Personalization',
-          description: "Monitoring and attributing the user models LLMs silently build — SPAR research fellowship",
+          description: "Monitoring and attributing the user models LLMs silently build. SPAR research fellowship",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01_implicit_personalization/";
             },},{id: "projects-moe-interpretability",
@@ -415,7 +415,7 @@ ninja.data = [{
               window.location.href = "/projects/03_bayesianflow/";
             },},{id: "projects-self-attention-kernels",
           title: 'Self-Attention Kernels',
-          description: "Optimized Causal Multi-Head Self-Attention in CUDA, OpenMP, and SIMD — 1.09× faster than PyTorch naive on A100",
+          description: "Optimized Causal Multi-Head Self-Attention in CUDA, OpenMP, and SIMD. 1.09× faster than PyTorch naive on A100",
           section: "Projects",handler: () => {
               window.location.href = "/projects/04_self_attention_kernels/";
             },},{id: "projects-lora-amp-dora-in-tinygrad",
@@ -425,7 +425,7 @@ ninja.data = [{
               window.location.href = "/projects/05_lora_tinygrad/";
             },},{id: "projects-vector-store-rag",
           title: 'Vector Store + RAG',
-          description: "Minimal RAG pipeline with a custom vector store and Mistral via Ollama — no LangChain",
+          description: "Minimal RAG pipeline with a custom vector store and Mistral via Ollama. No LangChain",
           section: "Projects",handler: () => {
               window.location.href = "/projects/06_vector_rag/";
             },},{
