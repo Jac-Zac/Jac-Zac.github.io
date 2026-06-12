@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow (Spring 2026)
