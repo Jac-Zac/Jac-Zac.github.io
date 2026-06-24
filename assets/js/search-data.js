@@ -428,6 +428,11 @@ ninja.data = [{
           description: "Minimal RAG pipeline with a custom vector store and Mistral via Ollama. No LangChain",
           section: "Projects",handler: () => {
               window.location.href = "/projects/06_vector_rag/";
+            },},{id: "projects-parallel-heat-stencil",
+          title: 'Parallel Heat Stencil',
+          description: "Efficient and scalable 5-point heat stencil in C, parallelized from one core to multiple nodes with hybrid MPI + OpenMP on Cineca Leonardo",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/07_hpc_stencil/";
             },},{
         id: 'social-cv',
         title: 'CV',
