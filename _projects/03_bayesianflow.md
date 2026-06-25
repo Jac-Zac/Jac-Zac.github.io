@@ -4,7 +4,7 @@ title: BayesianFlow
 description: Pixel-wise uncertainty estimation in Flow Matching generative models via Last Layer Laplace Approximation
 img: assets/img/bayesianflow.png
 importance: 1
-category: ml
+category: ML
 ---
 
 **BayesianFlow** extends [BayesDiff](https://arxiv.org/pdf/2310.11142) from diffusion models to **Flow Matching**, achieving **5× faster generation** than DDIM at comparable quality.

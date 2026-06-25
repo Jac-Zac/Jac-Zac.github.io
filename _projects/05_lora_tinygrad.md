@@ -4,7 +4,7 @@ title: LoRA & DoRA in TinyGrad
 description: From-scratch Low-Rank Adaptation and Weight-Decomposed LoRA implemented in TinyGrad
 img: assets/img/lora_diagram.png
 importance: 2
-category: ml
+category: ML
 ---
 
 From-scratch implementations of **LoRA** (Low-Rank Adaptation) and **DoRA** (Weight-Decomposed LoRA) in [**TinyGrad**](https://github.com/tinygrad/tinygrad), showing how injecting low-rank adapters into linear layers reduces trainable parameter count while maintaining fine-tuning performance.

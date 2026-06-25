@@ -4,7 +4,7 @@ title: Parallel Heat Stencil
 description: Efficient and scalable 5-point heat stencil in C, parallelized from one core to multiple nodes with hybrid MPI + OpenMP on Cineca Leonardo
 img: assets/img/hpc_mpi_strong_speedup.png
 importance: 2
-category: systems
+category: HPC
 ---
 
 An efficient and scalable 5-point stencil for 2D heat diffusion, implemented in C and parallelized with hybrid MPI + OpenMP. Each iteration updates every cell to a weighted average of its four neighbours (center 0.5, neighbours 0.125), with fixed sources injecting energy. The 5-point stencil has very low arithmetic intensity, which makes it memory-bound, so the memory bottleneck is the central concern throughout. Benchmarked on Cineca Leonardo and the Orfeo EPYC cluster, and validated against a Python reference for energy conservation.

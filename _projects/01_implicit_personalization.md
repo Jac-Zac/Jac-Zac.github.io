@@ -4,7 +4,7 @@ title: Implicit Personalization
 description: Monitoring and attributing the user models LLMs silently build. SPAR research fellowship
 img: assets/img/implicit_personalization.png
 importance: 1
-category: research
+category: Research
 ---
 
 <img src="{{ '/assets/img/persona_icon.png' | relative_url }}" alt="Implicit Personalization logo" style="height: 2rem; vertical-align: middle; margin-bottom: 0.4rem;"> LLMs quietly form internal representations of _who they're talking to_ (guesses about a user's age, expertise, political leaning, or values) and silently condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded, how they can be detected, and whether they can be steered.

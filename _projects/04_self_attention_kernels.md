@@ -4,7 +4,7 @@ title: Self-Attention Kernels
 description: Optimized Causal Multi-Head Self-Attention in CUDA, OpenMP, and SIMD. 1.09× faster than PyTorch naive on A100
 img: assets/img/attention_mechanism.png
 importance: 1
-category: systems
+category: HPC
 ---
 
 Hand-optimized **Causal Multi-Head Self-Attention (CMHSA)** written from scratch in C++/CUDA and progressively tuned across three backends (single-threaded SIMD, OpenMP, and CUDA), with every kernel validated numerically against PyTorch's reference implementation (naive and `scaled_dot_product_attention`). The goal was less to beat cuBLAS than to understand, layer by layer, _where_ the time actually goes on modern hardware.
