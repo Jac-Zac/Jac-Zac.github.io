@@ -47,14 +47,20 @@ jobs:
 
       - name: Run citation update script
         id: run_citation_update
+        # Google Scholar blocks GitHub's datacenter IPs, so this scrape will
+        # usually time out (exit 124) when run from CI. We tolerate that here
+        # instead of failing the whole job: if it can't fetch, the existing
+        # _data/citations.yml is kept unchanged. To refresh citations reliably,
+        # run `python bin/update_scholar_citations.py` locally (see CUSTOMIZE.md).
+        continue-on-error: true
         shell: bash
         run: |
           set +e
           status=1
-          for attempt in 1 2 3; do
-            echo "🚀 Running citation update script (attempt $attempt/3)..."
+          for attempt in 1 2; do
+            echo "🚀 Running citation update script (attempt $attempt/2)..."
             start_time=$(date)
-            timeout 300 python bin/update_scholar_citations.py
+            timeout 120 python bin/update_scholar_citations.py
             status=$?
             end_time=$(date)
             if [ $status -eq 0 ]; then
@@ -63,13 +69,12 @@ jobs:
               break
             fi
             echo "❌ Attempt $attempt failed with exit code $status (started at $start_time, ended at $end_time)."
-            if [ $attempt -lt 3 ]; then
-              sleep 30
+            if [ $attempt -lt 2 ]; then
+              sleep 15
             fi
           done
           if [ $status -ne 0 ]; then
-            echo "❌ Citation update script failed after 3 attempts (last exit code $status)." >> $GITHUB_STEP_SUMMARY
-            exit $status
+            echo "⚠️ Citation scrape failed (likely Scholar blocking the runner). Keeping existing citations.yml." >> $GITHUB_STEP_SUMMARY
           fi
           set -e
 

@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research and engineering projects.
+description: Research and University Projects
 nav: true
 nav_order: 2
-display_categories: [Research, ML, HPC]
+display_categories: [Mechanistic Interpretability, ML, HPC]
 horizontal: false
 ---
 
