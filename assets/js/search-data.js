@@ -423,11 +423,11 @@ ninja.data = [{
           description: "From-scratch Low-Rank Adaptation and Weight-Decomposed LoRA implemented in TinyGrad",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05_lora_tinygrad/";
-            },},{id: "projects-vector-store-rag",
-          title: 'Vector Store + RAG',
-          description: "Minimal RAG pipeline with a custom vector store and Mistral via Ollama. No LangChain",
+            },},{id: "projects-genetic-algorithms-for-neural-network-pruning",
+          title: 'Genetic Algorithms for Neural-Network Pruning',
+          description: "Evolving structured pruning masks for a FashionMNIST MLP while keeping its trained weights frozen",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/06_vector_rag/";
+              window.location.href = "/projects/06_genetic_pruning/";
             },},{id: "projects-parallel-heat-stencil",
           title: 'Parallel Heat Stencil',
           description: "Efficient and scalable 5-point heat stencil in C, parallelized from one core to multiple nodes with hybrid MPI + OpenMP on Cineca Leonardo",
