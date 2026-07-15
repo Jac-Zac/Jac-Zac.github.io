@@ -11,7 +11,14 @@ _Can evolutionary search remove most of a neural network without retraining it?_
 
 This project studies that question on a `784 → 256 → 256 → 256 → 10` ReLU MLP trained on FashionMNIST.
 
-🔗 [GitHub](https://github.com/Jac-Zac/GA_Pruning)
+<p class="mt-3">
+  <a class="btn btn-primary" href="https://jac-zac.github.io/GA_Pruning/" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-chart-line"></i>&nbsp; Explore the interactive report
+  </a>
+  <a class="btn btn-outline-primary" href="https://github.com/Jac-Zac/GA_Pruning" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-github"></i>&nbsp; View the source code
+  </a>
+</p>
 
 ## Method
 
