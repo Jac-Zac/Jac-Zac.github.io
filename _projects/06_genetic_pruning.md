@@ -3,6 +3,7 @@ layout: page
 title: Genetic Algorithms for Neural-Network Pruning
 description: Evolving structured pruning masks for a FashionMNIST MLP while keeping its trained weights frozen
 img: assets/img/ga_pruning.png
+thumbnail_padded: true
 importance: 3
 category: ML
 ---

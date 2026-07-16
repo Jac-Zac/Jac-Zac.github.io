@@ -167,6 +167,14 @@ ul.task-list input[type="checkbox"] {
       }
     }
 
+    &.project-thumbnail-padded {
+      .card-img-top {
+        box-sizing: border-box;
+        padding: 0.75rem;
+        background-color: #fff;
+      }
+    }
+
     img {
       width: 100%;
     }

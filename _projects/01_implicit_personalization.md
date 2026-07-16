@@ -3,6 +3,7 @@ layout: page
 title: Implicit Personalization
 description: Monitoring and attributing the user models LLMs silently build. SPAR research fellowship
 img: assets/img/implicit_personalization.png
+thumbnail_padded: true
 importance: 1
 category: Mechanistic Interpretability
 ---

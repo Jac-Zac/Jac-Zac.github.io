@@ -3,6 +3,7 @@ layout: page
 title: BayesianFlow
 description: Pixel-wise uncertainty estimation in Flow Matching generative models via Last Layer Laplace Approximation
 img: assets/img/bayesianflow.png
+thumbnail_padded: true
 importance: 1
 category: ML
 ---

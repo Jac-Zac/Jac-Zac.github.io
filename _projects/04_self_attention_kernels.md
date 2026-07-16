@@ -3,6 +3,7 @@ layout: page
 title: Self-Attention Kernels
 description: Optimized Causal Multi-Head Self-Attention in CUDA, OpenMP, and SIMD. 1.09× faster than PyTorch naive on A100
 img: assets/img/attention_mechanism.png
+thumbnail_padded: true
 importance: 1
 category: HPC
 ---
