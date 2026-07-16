@@ -5,21 +5,17 @@ description: Evolving structured pruning masks for a FashionMNIST MLP while keep
 img: assets/img/ga_pruning.png
 thumbnail_padded: true
 importance: 3
-category: ML
+category: Machine Learning
+code: https://github.com/Jac-Zac/GA_Pruning
+report: https://jac-zac.github.io/GA_Pruning/
+report_label: Explore the interactive report
 ---
 
 _Can evolutionary search remove most of a neural network without retraining it?_
 
 This project studies that question on a `784 → 256 → 256 → 256 → 10` ReLU MLP trained on FashionMNIST.
 
-<p class="mt-3">
-  <a class="btn btn-primary" href="https://jac-zac.github.io/GA_Pruning/" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-chart-line"></i>&nbsp; Explore the interactive report
-  </a>
-  <a class="btn btn-outline-primary" href="https://github.com/Jac-Zac/GA_Pruning" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-github"></i>&nbsp; View the source code
-  </a>
-</p>
+{% include project_actions.liquid %}
 
 ## Method
 
@@ -45,7 +41,7 @@ The experiment follows four steps:
 {% include figure.liquid path="assets/img/ga_pruning_accuracy.svg" class="img-fluid rounded z-depth-1 my-3" alt="Test accuracy of structured pruning methods across neuron sparsity levels" zoomable=true %}
 
 At **85% neuron sparsity**, uniform-crossover GA retains **79.4 ± 3.0%** test
-accuracy (with 88.92% beeing the original test accuracy for the dense model).
+accuracy, compared with 88.92% for the original dense model.
 That is 8.9 percentage points above equal-budget hill climbing, 30.7 points above random search, and 52.2 points above per-layer magnitude pruning.
 The gap grows as the pruning constraint becomes harder: at 90% sparsity, the GA retains 65.9% accuracy versus 53.8% for hill climbing.
 

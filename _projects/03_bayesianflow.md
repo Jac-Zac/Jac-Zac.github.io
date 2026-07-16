@@ -5,11 +5,19 @@ description: Pixel-wise uncertainty estimation in Flow Matching generative model
 img: assets/img/bayesianflow.png
 thumbnail_padded: true
 importance: 1
-category: ML
+category: Machine Learning
+code: https://github.com/Jac-Zac/BayesianFlow
+slides: https://canva.link/vteuehldupg5bv3
 ---
 
-**BayesianFlow** extends [BayesDiff](https://arxiv.org/pdf/2310.11142) from diffusion models to **Flow Matching**, achieving **5× faster generation** than DDIM at comparable quality.
+**BayesianFlow** extends [BayesDiff](https://arxiv.org/pdf/2310.11142) from diffusion models to **flow matching**, producing pixel-wise uncertainty estimates alongside generated images.
 
-A **Last Layer Laplace Approximation** is integrated into the U-Net to produce pixel-wise uncertainty estimates during generation, yielding interpretable confidence maps alongside generated images. Experiments on MNIST and Fashion-MNIST assess both the quality of uncertainty estimates and the computational efficiency gap between diffusion and flow matching.
+{% include project_actions.liquid %}
 
-🔗 [GitHub](https://github.com/Jac-Zac/BayesianFlow) · 📊 [Slides](https://canva.link/vteuehldupg5bv3)
+## Method
+
+A **Last Layer Laplace Approximation** is integrated into the U-Net. Its predictive variance is propagated through the generative trajectory, yielding an interpretable confidence map for each generated sample.
+
+## Results
+
+Experiments on MNIST and Fashion-MNIST compare uncertainty quality and computational efficiency across diffusion and flow-matching models. Flow matching achieves **5× faster generation** than DDIM at comparable quality.

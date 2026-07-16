@@ -1,0 +1,42 @@
+{% if page.report or page.demo or page.code or page.slides or page.code_status %}
+  <nav class="project-actions" aria-label="Project resources">
+    {% if page.report %}
+      <a class="btn btn-primary project-action" href="{{ page.report }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+        <span>{{ page.report_label | default: 'Interactive report' }}</span>
+        <i class="fa-solid fa-arrow-up-right-from-square project-action-external" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+
+    {% if page.demo %}
+      <a class="btn btn-primary project-action" href="{{ page.demo }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-play" aria-hidden="true"></i>
+        <span>{{ page.demo_label | default: 'Live demo' }}</span>
+        <i class="fa-solid fa-arrow-up-right-from-square project-action-external" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+
+    {% if page.code %}
+      <a class="btn btn-outline-primary project-action" href="{{ page.code }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <span>{{ page.code_label | default: 'Code' }}</span>
+        <i class="fa-solid fa-arrow-up-right-from-square project-action-external" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+
+    {% if page.slides %}
+      <a class="btn btn-outline-primary project-action" href="{{ page.slides }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-display" aria-hidden="true"></i>
+        <span>{{ page.slides_label | default: 'Slides' }}</span>
+        <i class="fa-solid fa-arrow-up-right-from-square project-action-external" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+
+    {% if page.code_status == 'private' %}
+      <span class="project-action-status">
+        <i class="fa-solid fa-lock" aria-hidden="true"></i>
+        Code available on request
+      </span>
+    {% endif %}
+  </nav>
+{% endif %}

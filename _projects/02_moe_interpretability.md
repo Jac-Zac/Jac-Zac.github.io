@@ -6,6 +6,9 @@ img: assets/img/moe_evr_heatmap.png
 thumbnail_padded: true
 importance: 2
 category: Mechanistic Interpretability
+slides: https://canva.link/6w5ug5hf2pqogjh
+slides_label: Presentation
+code_status: private
 ---
 
 _Do Mixture-of-Experts models really divide computation into clean, interpretable
@@ -17,11 +20,7 @@ contribution is **Expert Pursuit**, a method that turns expert activations into
 sparse, readable token summaries. A smaller causal study then checks whether
 those apparent specializations actually influence generation.
 
-<p class="mt-3">
-  <a class="btn btn-primary" href="https://canva.link/6w5ug5hf2pqogjh" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-display"></i>&nbsp; View the presentation
-  </a>
-</p>
+{% include project_actions.liquid %}
 
 ## Expert Pursuit
 
@@ -85,7 +84,7 @@ centered outputs vary across inputs.
 
 | Readout                    |  EVR@1 |  EVR@3 | EVR@10 |
 | -------------------------- | -----: | -----: | -----: |
-| Logit lens (one direction) | 0.0010 |      — |      — |
+| Logit lens (one direction) | 0.0010 |    N/A |    N/A |
 | SOMP sparse basis          | 0.0020 | 0.0056 | 0.0146 |
 
 Across all 1,024 OLMoE experts, the first SOMP atom captures about **2×** the
@@ -106,5 +105,3 @@ proxy has no strong sparse handle.
 This follow-up is intentionally secondary: **Expert Pursuit generates readable
 hypotheses; causal gate interventions test which of those hypotheses actually
 change model behavior.**
-
-_Repository currently private. Available on request._
