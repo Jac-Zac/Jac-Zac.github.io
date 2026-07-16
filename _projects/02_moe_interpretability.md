@@ -8,7 +8,7 @@ importance: 2
 category: Mechanistic Interpretability
 slides: https://canva.link/6w5ug5hf2pqogjh
 slides_label: Presentation
-code_status: private
+code: https://github.com/Jac-Zac/MoE_Interp
 ---
 
 _Do Mixture-of-Experts models really divide computation into clean, interpretable
