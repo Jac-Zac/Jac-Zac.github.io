@@ -405,7 +405,7 @@ ninja.data = [{
               window.location.href = "/projects/01_implicit_personalization/";
             },},{id: "projects-moe-interpretability",
           title: 'MoE Interpretability',
-          description: "Adapting HeadPursuit / SOMP to classify expert specialization in Mixture-of-Experts LLMs",
+          description: "Reading MoE experts with sparse vocabulary directions and testing when specialization is real",
           section: "Projects",handler: () => {
               window.location.href = "/projects/02_moe_interpretability/";
             },},{id: "projects-bayesianflow",
