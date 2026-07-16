@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: A small selection of GitHub repositories I maintain.
+description: Open-source repositories maintained by Jacopo Zacchigna for AI research, mechanistic interpretability, and machine learning.
 nav: false
 nav_order: 4
 ---

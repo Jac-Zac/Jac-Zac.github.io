@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-description: My CV in PDF form.
+description: Curriculum vitae of Jacopo Zacchigna, covering research, education, publications, technical skills, and professional experience.
 ---
 
 {% assign cv_pdf = "/assets/pdf/CV.pdf" | relative_url %}

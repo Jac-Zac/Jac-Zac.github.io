@@ -22,7 +22,7 @@ latest_posts:
   enabled: false
 ---
 
-I'm a final-year **Master's student in Data Science and Artificial Intelligence** at the **University of Trieste**, focused on **deep learning** and **mechanistic interpretability**.
+I'm a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on **deep learning** and **mechanistic interpretability**.
 
 I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to collaborating on research in these areas. Feel free to <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>.
 
