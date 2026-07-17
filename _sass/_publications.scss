@@ -40,11 +40,18 @@
       margin-bottom: 1rem;
 
       .preview {
-        display: inline-block;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
       }
 
       .abbr {
         margin-bottom: 0.5rem;
+
+        figure {
+          margin: 0;
+        }
 
         abbr {
           display: inline-block;
