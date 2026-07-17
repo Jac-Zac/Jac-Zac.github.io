@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Self-Attention Kernels
+math: true
 description: Optimized causal multi-head self-attention in CUDA, OpenMP, and SIMD, reaching 1.09× naive PyTorch on A100
 img: assets/img/attention_mechanism.png
 thumbnail_padded: true

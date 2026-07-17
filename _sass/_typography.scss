@@ -50,6 +50,13 @@ table.table a {
   }
 }
 
+.post-header .desc a,
+.post article .clearfix a:not(.btn),
+footer.sticky-bottom .container a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
