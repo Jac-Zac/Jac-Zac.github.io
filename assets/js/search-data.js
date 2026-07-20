@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications by Jacopo Zacchigna, with abstracts, full text, citation information, and links to publisher records.",
+          description: "My peer-reviewed publications, with abstracts, full text, code, and citation details.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum vitae of Jacopo Zacchigna, covering research, education, publications, technical skills, and professional experience.",
+          description: "My curriculum vitae, including research, experience, education, publications, projects, and technical skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
