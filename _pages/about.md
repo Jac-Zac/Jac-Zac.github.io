@@ -62,7 +62,7 @@ In parallel, I have been working on mechanistic interpretability of **Mixture-of
         <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
         <div>
           <strong>M.S. in Data Science &amp; AI</strong>
-          <span><a href="https://www.units.it/">University of Trieste</a> (IT), 2024–2026</span>
+          <span><a href="https://www.units.it/">University of Trieste</a> (IT), 2024–2026 (expected)</span>
         </div>
       </li>
       <li>

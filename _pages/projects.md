@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research projects by Jacopo Zacchigna in mechanistic interpretability, machine learning, deep learning, and high-performance computing.
+description: Selected research projects in mechanistic interpretability, machine learning, deep learning, and high-performance computing.
 nav: true
 nav_order: 2
 display_categories: [Mechanistic Interpretability, Machine Learning, HPC]
