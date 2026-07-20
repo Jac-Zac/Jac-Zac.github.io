@@ -30,18 +30,15 @@
 {% endif %}
 
 <!-- Fonts & Icons -->
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/roboto/roboto-latin-variable.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link defer rel="stylesheet" href="{{ '/assets/css/scholar-icons.css' | relative_url | bust_file_cache }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
-  media="print"
-  onload="this.media='all'"
->
-<noscript><link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}"></noscript>
 
 <!-- Code Syntax Highlighting -->
 <link
