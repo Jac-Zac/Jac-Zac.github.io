@@ -4,7 +4,8 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-description: Curriculum vitae of Jacopo Zacchigna, covering research, education, publications, technical skills, and professional experience.
+description: My curriculum vitae, including research, experience, education, publications, projects, and technical skills.
+meta_description: Curriculum vitae of Jacopo Zacchigna, including research and professional experience, education, publications, selected projects, and technical skills.
 ---
 
 {% assign cv_pdf = "/assets/pdf/CV.pdf" | relative_url %}
