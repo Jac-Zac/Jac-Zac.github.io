@@ -229,26 +229,58 @@
         {% capture link %}https://www.zotero.org/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% else %}
-        {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% if social[1].url %}
+          {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% endif %}
     {% endcase %}
   {% endfor %}
 
+  {% assign schema_site_url = '/' | absolute_url %}
+  {% assign schema_page_url = page.url | absolute_url %}
+  {% assign schema_description = page.description | default: site.description | strip %}
+  {% assign schema_page_name = page.title | default: title %}
+  {% if page.url == '/' %}
+    {% assign schema_page_name = title %}
+  {% endif %}
+  {% assign schema_image = page.og_image | default: site.og_image | absolute_url %}
+
   <script type="application/ld+json">
     {
-        "author":
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@type": "Person",
-            "name": "{{ author_name }}"
+          "@type": "WebSite",
+          "@id": {{ schema_site_url | append: '#website' | jsonify }},
+          "url": {{ schema_site_url | jsonify }},
+          "name": {{ title | strip | jsonify }},
+          "description": {{ site.description | strip | jsonify }},
+          "inLanguage": {{ site.lang | jsonify }},
+          "publisher": { "@id": {{ schema_site_url | append: '#person' | jsonify }} }
         },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+        {
+          "@type": "Person",
+          "@id": {{ schema_site_url | append: '#person' | jsonify }},
+          "name": {{ author_name | strip | jsonify }},
+          "url": {{ schema_site_url | jsonify }},
+          "image": {{ schema_image | jsonify }},
+          "description": {{ site.description | strip | jsonify }},
+          "sameAs": {{ sameaslinks | jsonify }}
+        },
+        {
+          "@type": "{% if page.url == '/' %}ProfilePage{% elsif is_blog_post %}BlogPosting{% else %}WebPage{% endif %}",
+          "@id": {{ schema_page_url | append: '#webpage' | jsonify }},
+          "url": {{ schema_page_url | jsonify }},
+          "name": {{ schema_page_name | strip | jsonify }},
+          "description": {{ schema_description | jsonify }},
+          "inLanguage": {{ site.lang | jsonify }},
+          "isPartOf": { "@id": {{ schema_site_url | append: '#website' | jsonify }} },
+          {% if page.url == '/' %}
+            "mainEntity": { "@id": {{ schema_site_url | append: '#person' | jsonify }} }
+          {% else %}
+            "author": { "@id": {{ schema_site_url | append: '#person' | jsonify }} }
+          {% endif %}
+        }
+      ]
     }
   </script>
 {% endif %}

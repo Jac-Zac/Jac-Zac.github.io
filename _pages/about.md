@@ -2,12 +2,14 @@
 layout: about
 title: About
 permalink: /
+description: Jacopo Zacchigna is a Data Science and AI master's student and AI researcher at the University of Trieste, focused on mechanistic interpretability and safer language models.
 subtitle: >
   Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow (Spring 2026)
 
 profile:
   align: right
   image: jacopo.png
+  image_alt: Portrait of Jacopo Zacchigna
   image_circular: true
   more_info: >
     <p><i class="fa-solid fa-location-dot"></i>&nbsp; Trieste, Italy</p>
@@ -22,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I'm a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on **deep learning** and **mechanistic interpretability**.
+I'm Jacopo Zacchigna, a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on **deep learning** and **mechanistic interpretability**.
 
 I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to collaborating on research in these areas. Feel free to <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>.
 
