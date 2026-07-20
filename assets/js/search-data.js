@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "Research projects by Jacopo Zacchigna in mechanistic interpretability, machine learning, deep learning, and high-performance computing.",
+          description: "Selected research projects in mechanistic interpretability, machine learning, deep learning, and high-performance computing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
