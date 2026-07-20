@@ -55,6 +55,134 @@ code {
   word-wrap: break-word;
 }
 
+// Rouge syntax highlighting. These selectors deliberately have greater
+// specificity than the legacy Pygments theme files loaded by al-folio, so all
+// code blocks follow the active Catppuccin Latte/Mocha site theme.
+:root .highlight {
+  color: var(--global-text-color);
+
+  pre,
+  .hll {
+    color: var(--global-text-color);
+    background-color: var(--global-code-bg-color);
+  }
+
+  .c,
+  .cm,
+  .c1,
+  .cs,
+  .cp {
+    color: var(--syntax-comment);
+    font-style: italic;
+  }
+
+  .err,
+  .gr,
+  .gt,
+  .gd {
+    color: var(--syntax-red);
+  }
+
+  .k,
+  .kc,
+  .kd,
+  .kn,
+  .kp,
+  .kr,
+  .ow {
+    color: var(--syntax-mauve);
+    font-weight: bold;
+  }
+
+  .o,
+  .p {
+    color: var(--syntax-sky);
+  }
+
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .mo,
+  .il {
+    color: var(--syntax-peach);
+  }
+
+  .s,
+  .sb,
+  .sc,
+  .sd,
+  .s1,
+  .s2,
+  .se,
+  .sh,
+  .si,
+  .sr {
+    color: var(--syntax-green);
+  }
+
+  .sx,
+  .ss {
+    color: var(--syntax-pink);
+  }
+
+  .na,
+  .nl {
+    color: var(--syntax-blue);
+  }
+
+  .nb,
+  .bp,
+  .no,
+  .nv,
+  .vc,
+  .vg,
+  .vi {
+    color: var(--syntax-teal);
+  }
+
+  .nc,
+  .ne,
+  .nf,
+  .nn,
+  .nt,
+  .kt {
+    color: var(--syntax-yellow);
+  }
+
+  .nd,
+  .ni {
+    color: var(--syntax-pink);
+  }
+
+  .g,
+  .l,
+  .n,
+  .x,
+  .py,
+  .nx,
+  .ld,
+  .ge,
+  .gs {
+    color: var(--global-text-color);
+  }
+
+  .gh,
+  .gu,
+  .gp,
+  .go {
+    color: var(--syntax-subtext);
+  }
+
+  .gi {
+    color: var(--syntax-green);
+  }
+
+  .w {
+    color: var(--syntax-selection);
+  }
+}
+
 // Progress bars
 
 progress {

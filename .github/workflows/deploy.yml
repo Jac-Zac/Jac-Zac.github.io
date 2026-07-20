@@ -13,6 +13,7 @@ on:
       - "**.html"
       - "**.js"
       - "**.liquid"
+      - "**.txt"
       - "**/*.md"
       - "**.yml"
       - "Gemfile"
@@ -40,6 +41,7 @@ on:
       - "**.html"
       - "**.js"
       - "**.liquid"
+      - "**.txt"
       - "**/*.md"
       - "**.yml"
       - "Gemfile"
@@ -90,6 +92,12 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      - name: Validate search indexing files 🔎
+        run: |
+          test -s _site/sitemap.xml
+          test -s _site/robots.txt
+          grep -Fq '<loc>https://jac-zac.github.io/</loc>' _site/sitemap.xml
+          grep -Fq 'Sitemap: https://jac-zac.github.io/sitemap.xml' _site/robots.txt
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

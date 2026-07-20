@@ -24,6 +24,20 @@
   --global-newsletter-bg-color: #{v.$ctp-latte-mantle};
   --global-newsletter-text-color: #{v.$ctp-latte-text};
 
+  // Catppuccin Latte syntax highlighting
+  --syntax-comment: #{v.$ctp-latte-overlay0};
+  --syntax-red: #{v.$ctp-latte-red};
+  --syntax-mauve: #{v.$ctp-latte-mauve};
+  --syntax-blue: #{v.$ctp-latte-blue};
+  --syntax-sky: #{v.$ctp-latte-sky};
+  --syntax-teal: #{v.$ctp-latte-teal};
+  --syntax-green: #{v.$ctp-latte-green};
+  --syntax-yellow: #{v.$ctp-latte-yellow};
+  --syntax-peach: #{v.$ctp-latte-peach};
+  --syntax-pink: #{v.$ctp-latte-pink};
+  --syntax-subtext: #{v.$ctp-latte-subtext0};
+  --syntax-selection: #{v.$ctp-latte-surface0};
+
   // Block backgrounds/text are hand-tuned tints of the palette accents.
   --global-tip-block: #{v.$ctp-latte-green};
   --global-tip-block-bg: #dfe9d4;
@@ -88,6 +102,20 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{v.$ctp-mocha-base};
   --global-newsletter-bg-color: #{v.$ctp-mocha-surface0};
   --global-newsletter-text-color: #{v.$ctp-mocha-text};
+
+  // Catppuccin Mocha syntax highlighting
+  --syntax-comment: #{v.$ctp-mocha-overlay0};
+  --syntax-red: #{v.$ctp-mocha-red};
+  --syntax-mauve: #{v.$ctp-mocha-mauve};
+  --syntax-blue: #{v.$ctp-mocha-blue};
+  --syntax-sky: #{v.$ctp-mocha-sky};
+  --syntax-teal: #{v.$ctp-mocha-teal};
+  --syntax-green: #{v.$ctp-mocha-green};
+  --syntax-yellow: #{v.$ctp-mocha-yellow};
+  --syntax-peach: #{v.$ctp-mocha-peach};
+  --syntax-pink: #{v.$ctp-mocha-pink};
+  --syntax-subtext: #{v.$ctp-mocha-subtext0};
+  --syntax-selection: #{v.$ctp-mocha-surface0};
 
   // Block backgrounds/text are hand-tuned shades of the palette accents.
   --global-tip-block: #{v.$ctp-mocha-green};
