@@ -254,6 +254,7 @@
           "@id": {{ schema_site_url | append: '#website' | jsonify }},
           "url": {{ schema_site_url | jsonify }},
           "name": {{ title | strip | jsonify }},
+          "alternateName": "jac-zac.github.io",
           "description": {{ site.description | strip | jsonify }},
           "inLanguage": {{ site.lang | jsonify }},
           "publisher": { "@id": {{ schema_site_url | append: '#person' | jsonify }} }

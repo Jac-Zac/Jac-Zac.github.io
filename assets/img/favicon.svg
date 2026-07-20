@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title>Jacopo Zacchigna</title>
+  <rect width="96" height="96" rx="22" fill="#1e1e2e"/>
+  <path
+    fill="#eff1f5"
+    d="M20 29h22v31c0 12-7 19-18 19-7 0-12-3-16-8l8-8c2 3 4 5 7 5 4 0 6-3 6-8V40h-9V29Z"
+  />
+  <path fill="#eff1f5" d="M49 29h35v10L65 67h20v12H47V69l20-28H49V29Z"/>
+</svg>
