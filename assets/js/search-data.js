@@ -55,8 +55,8 @@ ninja.data = [{
           description: "From-scratch Low-Rank Adaptation and Weight-Decomposed LoRA implemented in TinyGrad",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05_lora_tinygrad/";
-            },},{id: "projects-genetic-algorithms-for-neural-network-pruning",
-          title: 'Genetic Algorithms for Neural-Network Pruning',
+            },},{id: "projects-ga-for-neural-network-pruning",
+          title: 'GA for Neural Network Pruning',
           description: "Evolving structured pruning masks for a FashionMNIST MLP while keeping its trained weights frozen",
           section: "Projects",handler: () => {
               window.location.href = "/projects/06_genetic_pruning/";
