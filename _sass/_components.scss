@@ -433,6 +433,18 @@ ul.task-list input[type="checkbox"] {
         margin-bottom: 0.5rem;
       }
 
+      .huggingface-icon {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.25rem;
+        vertical-align: middle;
+        background-color: var(--global-text-color);
+        -webkit-mask: url("../img/huggingface.svg") center / contain no-repeat;
+        mask: url("../img/huggingface.svg") center / contain no-repeat;
+        transition: background-color 0.2s ease-in-out;
+      }
+
       svg {
         width: 1.6rem;
         height: 1.8rem;
@@ -454,6 +466,10 @@ ul.task-list input[type="checkbox"] {
 
         i::before {
           color: var(--global-theme-color);
+        }
+
+        .huggingface-icon {
+          background-color: var(--global-theme-color);
         }
       }
     }

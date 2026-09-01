@@ -65,7 +65,10 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social mt-5">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">
+          {% social_links %}
+          {% include huggingface_social.liquid %}
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Genetic Algorithms for Neural-Network Pruning
+title: GA for Neural Network Pruning
 description: Evolving structured pruning masks for a FashionMNIST MLP while keeping its trained weights frozen
 img: assets/img/ga_pruning.png
 thumbnail_padded: true
-importance: 3
+importance: 2
 category: Machine Learning
 code: https://github.com/Jac-Zac/GA_Pruning
 report: https://jac-zac.github.io/GA_Pruning/

@@ -3,7 +3,7 @@ layout: page
 title: LoRA & DoRA in TinyGrad
 description: From-scratch Low-Rank Adaptation and Weight-Decomposed LoRA implemented in TinyGrad
 img: assets/img/lora_diagram.png
-importance: 2
+importance: 3
 category: Machine Learning
 code: https://github.com/Jac-Zac/ML_Project_LoRA
 code_label: Archived code
