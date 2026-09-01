@@ -14,6 +14,7 @@
   --global-link-hover-color: color-mix(in srgb, #{v.$ctp-latte-blue} 88%, black);
   --global-research-accent-color: #{v.$ctp-latte-mauve};
   --global-profile-hover-shadow: 0 10px 27px #{rgba(v.$ctp-latte-blue, 0.16)}, 0 0 0 2px #{rgba(v.$ctp-latte-blue, 0.09)};
+  --global-publication-hover-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
   --global-hover-color: #{v.$ctp-latte-blue};
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #{v.$ctp-latte-surface0};
@@ -98,6 +99,7 @@ html[data-theme="dark"] {
   --global-link-hover-color: color-mix(in srgb, #{v.$ctp-mocha-blue} 82%, white);
   --global-research-accent-color: #{v.$ctp-mocha-mauve};
   --global-profile-hover-shadow: 0 10px 29px #{rgba(v.$ctp-mocha-blue, 0.16)}, 0 0 0 2px #{rgba(v.$ctp-mocha-blue, 0.11)};
+  --global-publication-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
   --global-hover-color: #{v.$ctp-mocha-blue};
   --global-hover-text-color: #{v.$ctp-mocha-base};
   --global-footer-bg-color: #{v.$ctp-mocha-surface0};
