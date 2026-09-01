@@ -193,3 +193,17 @@
 .citation-number {
   color: var(--global-theme-color);
 }
+
+@media (min-width: 768px) {
+  .publications ol.bibliography li {
+    .abbr {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    .abbr + .col-sm-8 {
+      flex: 0 0 58.3333%;
+      max-width: 58.3333%;
+    }
+  }
+}

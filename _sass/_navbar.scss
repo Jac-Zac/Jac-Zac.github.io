@@ -61,9 +61,20 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    border-radius: 0.3rem;
+    transition:
+      color 140ms ease-out,
+      background-color 140ms ease-out;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: var(--global-hover-color);
+      background-color: var(--global-theme-color-subtle);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
     }
   }
 
@@ -112,6 +123,12 @@
         }
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    transition: none;
   }
 }
 

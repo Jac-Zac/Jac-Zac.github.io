@@ -10,6 +10,10 @@
   --global-text-color: #{v.$ctp-latte-text};
   --global-text-color-light: #{v.$ctp-latte-subtext1};
   --global-theme-color: #{v.$ctp-latte-blue};
+  --global-theme-color-subtle: #{rgba(v.$ctp-latte-blue, 0.1)};
+  --global-link-hover-color: color-mix(in srgb, #{v.$ctp-latte-blue} 88%, black);
+  --global-research-accent-color: #{v.$ctp-latte-mauve};
+  --global-profile-hover-shadow: 0 10px 27px #{rgba(v.$ctp-latte-blue, 0.16)}, 0 0 0 2px #{rgba(v.$ctp-latte-blue, 0.09)};
   --global-hover-color: #{v.$ctp-latte-blue};
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #{v.$ctp-latte-surface0};
@@ -90,6 +94,10 @@ html[data-theme="dark"] {
   --global-text-color: #{v.$ctp-mocha-text};
   --global-text-color-light: #{v.$ctp-mocha-subtext0};
   --global-theme-color: #{v.$ctp-mocha-blue};
+  --global-theme-color-subtle: #{rgba(v.$ctp-mocha-blue, 0.12)};
+  --global-link-hover-color: color-mix(in srgb, #{v.$ctp-mocha-blue} 82%, white);
+  --global-research-accent-color: #{v.$ctp-mocha-mauve};
+  --global-profile-hover-shadow: 0 10px 29px #{rgba(v.$ctp-mocha-blue, 0.16)}, 0 0 0 2px #{rgba(v.$ctp-mocha-blue, 0.11)};
   --global-hover-color: #{v.$ctp-mocha-blue};
   --global-hover-text-color: #{v.$ctp-mocha-base};
   --global-footer-bg-color: #{v.$ctp-mocha-surface0};

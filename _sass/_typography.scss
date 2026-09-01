@@ -73,7 +73,7 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-link-hover-color);
     text-decoration: underline;
   }
 
@@ -83,10 +83,34 @@ table.table a {
 }
 
 .post-header .desc a,
-.post article .clearfix a:not(.btn),
+.post article .clearfix a:not(.btn) {
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+}
+
 footer.sticky-bottom .container a {
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+a.research-link {
+  color: var(--global-research-accent-color);
+  font-weight: 400;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-research-accent-color);
+  }
+}
+
+a.featured-link {
+  font-weight: 600;
 }
 
 .table-dark {

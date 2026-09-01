@@ -80,6 +80,30 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .post > .profile img {
+    transform-origin: center;
+    transition:
+      transform 240ms ease-out,
+      box-shadow 240ms ease-out;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: var(--global-profile-hover-shadow) !important;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post > .profile img {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   .profile.float-right,
   .profile.float-left {
