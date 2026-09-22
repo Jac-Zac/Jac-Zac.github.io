@@ -30,7 +30,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-implicit-personalization",
+        },{id: "news-team-jsr-placed-3rd-in-the-black-box-track-of-aletheia-s-quest-an-ai-lie-detection-competition-organized-by-cadenza-labs-and-ndif",
+          title: 'Team JSR placed 3rd in the black-box track of Aletheia’s Quest, an AI...',
+          description: "",
+          section: "News",},{id: "projects-implicit-personalization",
           title: 'Implicit Personalization',
           description: "Detecting and attributing the user models that LLMs build implicitly during conversation",
           section: "Projects",handler: () => {
