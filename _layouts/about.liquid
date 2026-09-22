@@ -56,7 +56,11 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2 class="mt-5">
+      {% assign selected_papers_margin = 'mt-5' %}
+      {% if page.announcements and page.announcements.enabled %}
+        {% assign selected_papers_margin = 'mt-4' %}
+      {% endif %}
+      <h2 class="{{ selected_papers_margin }}">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
