@@ -68,6 +68,11 @@ table {
   }
 }
 
+// Keep news tables readable before the dark-mode table class is added on page load.
+.news .table {
+  color: var(--global-text-color);
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
