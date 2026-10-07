@@ -4,7 +4,7 @@ title: About
 permalink: /
 description: Jacopo Zacchigna is a Data Science and AI master's student and AI researcher at the University of Trieste, focused on mechanistic interpretability and safer language models.
 subtitle: >
-  Master's student in Data Science & AI · <a href="https://sparai.org" target="_blank">SPAR</a> Research Fellow (Spring 2026)
+  Master's student in Data Science & AI · Research Visitor at UCL Linguistics
 
 profile:
   align: right
@@ -32,7 +32,9 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 ---
 
-**Recent work** · [SPAR](https://sparai.org) Research Fellow (Feb–May 2026) on [Implicit Personalization](https://github.com/implicit-personalization). I worked on probing internal user representations in LLMs (persona vectors). See <a class="featured-link" href="/projects/">the project page</a> for details.
+**Recent work** · I am currently a Research Visitor at UCL Linguistics, working with Mario Giulianelli and Gabriele Sarti on white-box auditing of LLM agents.
+
+Previously, I was a [SPAR](https://sparai.org) Research Fellow (Feb–May 2026), where I worked on [Implicit Personalization]({% link _projects/01_implicit_personalization.md %}) and studied internal user representations in LLMs (persona vectors). See <a class="featured-link" href="/projects/">my projects</a> for more.
 
 In parallel, I have been working on mechanistic interpretability of **Mixture-of-Experts** models (OLMoE, GPT-OSS), focusing on adapting HeadPursuit and SOMP to study expert specialization.
 
@@ -83,7 +85,14 @@ In parallel, I have been working on mechanistic interpretability of **Mixture-of
       <li>
         <i class="fa-solid fa-flask" aria-hidden="true"></i>
         <div>
-          <strong>Research Fellow</strong>
+          <strong>Research Visitor</strong>
+          <span>UCL Linguistics (current)</span>
+        </div>
+      </li>
+      <li>
+        <i class="fa-solid fa-flask" aria-hidden="true"></i>
+        <div>
+          <strong>Former Research Fellow</strong>
           <span><a href="https://sparai.org/">SPAR</a> (remote), 2026</span>
         </div>
       </li>
