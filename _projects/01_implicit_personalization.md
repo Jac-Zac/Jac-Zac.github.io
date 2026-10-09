@@ -7,11 +7,11 @@ thumbnail_padded: true
 importance: 1
 category: Mechanistic Interpretability
 code: https://github.com/implicit-personalization
-slides: https://docs.google.com/presentation/d/1qphCwoW-cTKJP4Nj1yXUO_OxkB0yzcqfNSs5czGOkuY/edit?slide=id.p1#slide=id.p1
+slides: https://docs.google.com/presentation/d/1qphCwoW-cTKJP4Nj1yXUO_OxkB0yzcqfNSs5czGOkuY/view
 slides_label: Poster slides
 ---
 
-<img src="{{ '/assets/img/persona_icon.png' | relative_url }}" alt="Implicit Personalization logo" style="height: 2rem; vertical-align: middle; margin-bottom: 0.4rem;"> LLMs quietly form internal representations of _who they're talking to_ (guesses about a user's age, expertise, political leaning, or values) and silently condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded, how they can be detected, and whether they can be steered.
+<img src="{{ '/assets/img/persona_icon_256.webp' | relative_url }}" alt="Implicit Personalization logo" width="32" height="32" style="height: 2rem; width: auto; vertical-align: middle; margin-bottom: 0.4rem;"> LLMs quietly form internal representations of _who they're talking to_ (guesses about a user's age, expertise, political leaning, or values) and silently condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded, how they can be detected, and whether they can be steered.
 
 {% include project_actions.liquid %}
 

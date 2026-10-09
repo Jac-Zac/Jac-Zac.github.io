@@ -68,8 +68,10 @@ table {
   }
 }
 
-// Keep news tables readable before the dark-mode table class is added on page load.
-.news .table {
+// Bootstrap hardcodes table text colors (.table / .table-dark), and .table-dark is only
+// toggled by JS after load. Follow the theme variable instead so tables never flash.
+.table,
+.table-dark {
   color: var(--global-text-color);
 }
 

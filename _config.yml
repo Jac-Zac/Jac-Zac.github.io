@@ -351,10 +351,12 @@ external_links:
 #   convert -version
 imagemagick:
   enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
-  widths:
+  widths: # keep ascending; the last width is also used as the zoomed-in image
     - 480
     - 800
     - 1400
+    - 2000
+    - 3000
   input_directories:
     - assets/img/
   input_formats:

@@ -7,7 +7,7 @@ importance: 3
 category: Machine Learning
 code: https://github.com/Jac-Zac/ML_Project_LoRA
 code_label: Archived code
-slides: https://www.canva.com/design/DAGJKcSf-b8/6JX6DyIRuLxLFd6UubpZ1A/view?utm_content=DAGJKcSf-b8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21818cddf6
+slides: https://www.canva.com/design/DAGJKcSf-b8/6JX6DyIRuLxLFd6UubpZ1A/view
 ---
 
 From-scratch implementations of **LoRA** (Low-Rank Adaptation) and **DoRA** (Weight-Decomposed LoRA) in [**TinyGrad**](https://github.com/tinygrad/tinygrad), showing how injecting low-rank adapters into linear layers reduces trainable parameter count while maintaining fine-tuning performance.

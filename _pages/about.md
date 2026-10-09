@@ -26,7 +26,7 @@ latest_posts:
   enabled: false
 ---
 
-I'm Jacopo Zacchigna, a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on <a class="research-link" href="/projects/#Machine%20Learning">deep learning</a> and <a class="research-link" href="/projects/#Mechanistic%20Interpretability">mechanistic interpretability</a>.
+I'm Jacopo Zacchigna, a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on <a class="research-link" href="{{ '/projects/' | relative_url }}#Machine%20Learning">deep learning</a> and <a class="research-link" href="{{ '/projects/' | relative_url }}#Mechanistic%20Interpretability">mechanistic interpretability</a>.
 
 I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to collaborating on research in these areas. Feel free to <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>.
 
@@ -34,7 +34,7 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 I am a Research Visitor at UCL Linguistics, working with [Mario Giulianelli](https://glnmario.github.io/) and [Gabriele Sarti](https://gsarti.com/) on **white-box auditing of LLM agents** in collaboration with [Parallax](https://parallx.ai/).
 
-Previously, I was a [SPAR](https://sparai.org) Research Fellow (Feb–May 2026), where I worked on [Implicit Personalization]({% link _projects/01_implicit_personalization.md %}) and studied internal user representations in LLMs (persona vectors). See <a class="featured-link" href="/projects/">my projects</a> for more.
+Previously, I was a [SPAR](https://sparai.org) Research Fellow (Feb–May 2026), where I worked on [Implicit Personalization]({% link _projects/01_implicit_personalization.md %}) and studied internal user representations in LLMs (persona vectors). See <a class="featured-link" href="{{ '/projects/' | relative_url }}">my projects</a> for more.
 
 ---
 
@@ -84,13 +84,13 @@ Previously, I was a [SPAR](https://sparai.org) Research Fellow (Feb–May 2026),
         <i class="fa-solid fa-flask" aria-hidden="true"></i>
         <div>
           <strong>Research Visitor</strong>
-          <span>UCL Linguistics (current)</span>
+          <span>UCL Linguistics (UK), 2026–present</span>
         </div>
       </li>
       <li>
         <i class="fa-solid fa-flask" aria-hidden="true"></i>
         <div>
-          <strong>Former Research Fellow</strong>
+          <strong>Research Fellow</strong>
           <span><a href="https://sparai.org/">SPAR</a> (remote), 2026</span>
         </div>
       </li>
