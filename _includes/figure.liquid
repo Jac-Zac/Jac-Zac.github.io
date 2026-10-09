@@ -84,6 +84,7 @@
       {% if include.fetchpriority %}
         fetchpriority="{{ include.fetchpriority }}"
       {% endif %}
+      decoding="async"
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     >
   </picture>

@@ -50,10 +50,10 @@ Strong scaling (50,000² grid, 1000 iterations, 3 tasks per node, 8 threads per 
 
 <div class="row">
 <div class="col-sm-6 mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/hpc_mpi_strong_speedup.png" class="img-fluid rounded z-depth-1" alt="MPI strong-scaling speedup tracking ideal up to 48 tasks" zoomable=true %}
+{% include figure.liquid path="assets/img/hpc_mpi_strong_speedup.png" sizes="(min-width: 1000px) 470px, (min-width: 576px) 47vw, 95vw" class="img-fluid rounded z-depth-1" alt="MPI strong-scaling speedup tracking ideal up to 48 tasks" zoomable=true %}
 </div>
 <div class="col-sm-6 mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/hpc_mpi_weak_efficiency.png" class="img-fluid rounded z-depth-1" alt="MPI weak-scaling efficiency near 100% up to 48 tasks" zoomable=true %}
+{% include figure.liquid path="assets/img/hpc_mpi_weak_efficiency.png" sizes="(min-width: 1000px) 470px, (min-width: 576px) 47vw, 95vw" class="img-fluid rounded z-depth-1" alt="MPI weak-scaling efficiency near 100% up to 48 tasks" zoomable=true %}
 </div>
 </div>
 
