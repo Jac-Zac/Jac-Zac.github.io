@@ -32,7 +32,7 @@ I want to understand _how_ LLMs work internally and how we can use that knowledg
 
 ---
 
-I am a Research Visitor at UCL Linguistics, working with [Mario Giulianelli](https://glnmario.github.io/) and [Gabriele Sarti](https://gsarti.com/) on **white-box auditing of LLM agents** in collaboration with [Parallax](https://parallx.ai/).
+I am a Research Visitor at UCL Linguistics, working with [Mario Giulianelli](https://glnmario.github.io/) and [Gabriele Sarti](https://gsarti.com/) on **white-box auditing of LLM agents** in collaboration with [Parallx](https://parallx.ai/).
 
 Previously, I was a [SPAR](https://sparai.org) Research Fellow (Feb–May 2026), where I worked on [Implicit Personalization]({% link _projects/01_implicit_personalization.md %}) and studied internal user representations in LLMs (persona vectors). See <a class="featured-link" href="{{ '/projects/' | relative_url }}">my projects</a> for more.
 
