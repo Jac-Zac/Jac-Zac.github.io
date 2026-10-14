@@ -30,7 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-my-team-jsr-placed-3rd-in-the-black-box-track-of-aletheia-s-quest-an-ai-lie-detection-competition",
+        },{id: "news-my-team-jsr-placed-3rd-in-the-black-box-track-of-aletheia-s-quest-an-ai-lie-detection-competition-slides",
           title: 'My team, JSR, placed 3rd in the black-box track of Aletheia’s Quest, an...',
           description: "",
           section: "News",},{id: "projects-implicit-personalization",
