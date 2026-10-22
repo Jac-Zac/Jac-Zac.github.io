@@ -6,6 +6,8 @@ img: assets/img/implicit_personalization.png
 thumbnail_padded: true
 importance: 1
 category: Mechanistic Interpretability
+report: https://library.sparai.org/reports/monitoring-and-attributing-implicit-personalization-in-conversational-agents-0zgx2q/
+report_label: SPAR report
 code: https://github.com/implicit-personalization
 poster: https://docs.google.com/presentation/d/1qphCwoW-cTKJP4Nj1yXUO_OxkB0yzcqfNSs5czGOkuY/view
 slides: https://docs.google.com/presentation/d/1rfmxho99iahgwKHRj2MvYjVk0xDcWKvN3huGAxYRxz8/view

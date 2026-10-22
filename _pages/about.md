@@ -28,7 +28,7 @@ latest_posts:
 
 I'm Jacopo Zacchigna, a final-year Master's student in Data Science and Artificial Intelligence at the University of Trieste, focused on <a class="research-link" href="{{ '/projects/' | relative_url }}#Machine%20Learning">deep learning</a> and <a class="research-link" href="{{ '/projects/' | relative_url }}#Mechanistic%20Interpretability">mechanistic interpretability</a>.
 
-I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to collaborating on research in these areas. Feel free to <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>.
+I want to understand _how_ LLMs work internally and how we can use that knowledge to build **better** and **safer** systems for the future. I'm open to research collaborations. <a href="mailto:{{ site.data.socials.email | encode_email }}">Reach out</a>.
 
 ---
 
