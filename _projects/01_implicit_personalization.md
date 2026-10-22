@@ -14,15 +14,15 @@ slides: https://docs.google.com/presentation/d/1rfmxho99iahgwKHRj2MvYjVk0xDcWKvN
 slides_label: Lightning talk slides
 ---
 
-<img src="{{ '/assets/img/persona_icon_256.webp' | relative_url }}" alt="Implicit Personalization logo" width="32" height="32" style="height: 2rem; width: auto; vertical-align: middle; margin-bottom: 0.4rem;"> LLMs quietly form internal representations of _who they're talking to_ (guesses about a user's age, expertise, political leaning, or values) and silently condition their responses on them. As a **[SPAR](https://sparai.org)** research fellow with the [Implicit Personalization](https://github.com/implicit-personalization) group, I investigated how these user models are encoded, how they can be detected, and whether they can be steered.
+<img src="{{ '/assets/img/persona_icon_256.webp' | relative_url }}" alt="Implicit Personalization logo" width="32" height="32" style="height: 2rem; width: auto; vertical-align: middle; margin-bottom: 0.4rem;"> LLMs form internal representations of _who they're talking to_ (guesses about a user's age, expertise, political leaning, or values) and condition their responses on them. The work was carried out during a **[SPAR](https://sparai.org)** research fellowship with the [Implicit Personalization](https://github.com/implicit-personalization) group, and covered how those user models are encoded, whether they can be detected, and whether they can be steered.
 
 {% include project_actions.liquid %}
 
 ## Codebases
 
-The work spans four connected codebases:
+Four connected codebases:
 
-**`persona-data`**: Dataset utilities for **SynthPersona**: 1,000 synthetic personas × 788,000 QA rows (explicit + implicit, FRQ + MCQ) covering diverse demographic and ideological profiles. Released on the [HF Hub](https://huggingface.co/datasets/implicit-personalization/synth-persona) with leakage-aware train/test splits.
+**`persona-data`**: Dataset utilities for **SynthPersona**: 1,000 synthetic personas × 788,000 QA rows (explicit + implicit, FRQ + MCQ) covering a range of demographic and ideological profiles. Released on the [HF Hub](https://huggingface.co/datasets/implicit-personalization/synth-persona) with leakage-aware train/test splits.
 
 {% include figure.liquid path="assets/img/persona_vector_extraction.png" class="img-fluid rounded z-depth-1 my-3" alt="SynthPersona dataset overview" zoomable=true %}
 
@@ -30,6 +30,6 @@ The work spans four connected codebases:
 
 {% include figure.liquid path="assets/img/what_are_rich_persona_vectors.png" class="img-fluid rounded z-depth-1 my-3" alt="What are rich persona vectors" zoomable=true %}
 
-**`persona-ui`**: A Streamlit web app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) that exposes the full pipeline: chat with persona-steered models, run extraction, train probes, and visualize projections interactively.
+**`persona-ui`**: A Streamlit app on [HF Spaces](https://huggingface.co/spaces/implicit-personalization/persona-ui) for chatting with persona-steered models, running extraction, training probes, and viewing the projections.
 
-**`persona-2-lora`**: Mechanistic interpretability experiments on Doc-to-LoRA: evaluating whether LoRA adapters trained on persona biographies internalize persona attributes measurably differently from biography-prompted baselines.
+**`persona-2-lora`**: Experiments on Doc-to-LoRA testing whether LoRA adapters trained on persona biographies internalize persona attributes differently from biography prompting alone.

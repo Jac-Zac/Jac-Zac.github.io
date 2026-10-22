@@ -11,9 +11,7 @@ report: https://jac-zac.github.io/GA_Pruning/
 report_label: Explore the interactive report
 ---
 
-_Can evolutionary search remove most of a neural network without retraining it?_
-
-This project studies that question on a `784 → 256 → 256 → 256 → 10` ReLU MLP trained on FashionMNIST.
+Structured pruning usually comes with a retraining step. This project asks whether a genetic algorithm can find a good pruning mask for a network that is never retrained, using a `784 → 256 → 256 → 256 → 10` ReLU MLP trained on FashionMNIST.
 
 {% include project_actions.liquid %}
 
@@ -47,6 +45,6 @@ The gap grows as the pruning constraint becomes harder: at 90% sparsity, the GA 
 
 {% include figure.liquid path="assets/img/ga_pruning_convergence.svg" class="img-fluid rounded z-depth-1 my-3" alt="Validation accuracy convergence of genetic algorithms, hill climbing, and random search at 85 percent neuron sparsity" zoomable=true %}
 
-The convergence curves explain the final gap. At 85% sparsity, both crossover
+The convergence curves show where that gap comes from. At 85% sparsity, both crossover
 variants keep improving throughout the search, while random search plateaus early
 and hill climbing advances more slowly. Uniform crossover finishes slightly ahead of two-point crossover.

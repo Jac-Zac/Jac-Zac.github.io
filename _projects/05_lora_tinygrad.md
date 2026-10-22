@@ -10,14 +10,12 @@ code_label: Archived code
 slides: https://www.canva.com/design/DAGJKcSf-b8/6JX6DyIRuLxLFd6UubpZ1A/view
 ---
 
-From-scratch implementations of **LoRA** (Low-Rank Adaptation) and **DoRA** (Weight-Decomposed LoRA) in [**TinyGrad**](https://github.com/tinygrad/tinygrad), showing how injecting low-rank adapters into linear layers reduces trainable parameter count while maintaining fine-tuning performance.
+**LoRA** (Low-Rank Adaptation) and **DoRA** (Weight-Decomposed LoRA) written from scratch in [**TinyGrad**](https://github.com/tinygrad/tinygrad). Both replace the full fine-tuning update of a linear layer with a much smaller set of trainable parameters.
 
 {% include project_actions.liquid %}
 
 ## Implementation
 
-LoRA keeps the pretrained weight matrix frozen and learns a low-rank update through two smaller matrices. DoRA separates each weight into magnitude and direction, then applies low-rank adaptation to the directional component. Both implementations expose these mechanics directly through TinyGrad rather than relying on a high-level adapter library.
+LoRA keeps the pretrained weight matrix frozen and learns a low-rank update through two smaller matrices. DoRA separates each weight into magnitude and direction, then applies the low-rank adaptation to the directional component only.
 
-## Purpose
-
-The project provides a compact reference for understanding parameter-efficient fine-tuning, including how adapters affect trainable parameter counts, computation graphs, and inference behavior.
+Both are built on TinyGrad's own tensors and autograd, with no adapter library in between. The adapter parameters and the extra matmuls stay visible in the code.

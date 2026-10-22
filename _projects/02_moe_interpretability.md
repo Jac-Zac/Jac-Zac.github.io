@@ -11,10 +11,8 @@ slides_label: Presentation
 code: https://github.com/Jac-Zac/MoE_Interp
 ---
 
-_Do Mixture-of-Experts models really divide computation into clean, interpretable
-specialists?_
-
-This project studies that question in
+Mixture-of-Experts models are often described as dividing computation among
+clean, interpretable specialists. This project tests that claim in
 `allenai/OLMoE-1B-7B-0924-Instruct` and `openai/gpt-oss-20b`. Its main
 contribution is **Expert Pursuit**, a method that turns expert activations into
 sparse, readable token summaries. A smaller causal study then checks whether
@@ -24,14 +22,13 @@ those apparent specializations actually influence generation.
 
 ## Expert Pursuit
 
-I adapted
-**[HeadPursuit](https://github.com/lorenzobasile/HeadPursuit)** from attention
-heads to MoE feed-forward experts. The pipeline captures each expert's gated
-output across many prompts and runs **Simultaneous Orthogonal Matching Pursuit
-(SOMP)** against the model's normalized unembedding dictionary. The selected
-token directions form a sparse, readable summary of how that expert's output
-varies; explained variance ratio (EVR) measures how much of the variation the
-summary captures.
+The method adapts **[HeadPursuit](https://github.com/lorenzobasile/HeadPursuit)**
+from attention heads to MoE feed-forward experts. The pipeline captures each
+expert's gated output across many prompts and runs **Simultaneous Orthogonal
+Matching Pursuit (SOMP)** against the model's normalized unembedding dictionary.
+The selected token directions form a sparse, readable summary of how that
+expert's output varies; explained variance ratio (EVR) measures how much of the
+variation the summary captures.
 
 {% include figure.liquid path="assets/img/moe_evr_heatmap.png" class="img-fluid rounded z-depth-1 my-3" alt="Expert Pursuit explained variance across GPT-OSS layers and experts" zoomable=true %}
 
@@ -42,9 +39,9 @@ basis captures only a limited part of a typical expert's output variance.
 
 ### What does an interpretable expert look like?
 
-The aggregate EVR distribution is only half the story. The token lists make the
-method concrete: below are representative OLMoE experts found by unrestricted
-SOMP on 10,000 TriviaQA questions. Subword fragments are omitted for
+Aggregate EVR says little about what any single expert does. The token lists
+make the method concrete: below are representative OLMoE experts found by
+unrestricted SOMP on 10,000 TriviaQA questions. Subword fragments are omitted for
 readability.
 
 | Expert  | Candidate specialization | Representative top SOMP atoms                                  | EVR@25 |
@@ -59,17 +56,17 @@ readability.
 These readable examples cluster in later layers, although the final
 unembedding is also a better-calibrated readout there. High EVR does not
 automatically mean a clean concept: the highest-EVR early expert mixes unrelated
-atoms such as `this`, `Kindle`, `Sutton`, and `History`. Expert Pursuit should
-therefore be read as a sparse summary, not as proof that every expert has one
-meaning.
+atoms such as `this`, `Kindle`, `Sutton`, and `History`. Expert Pursuit is
+therefore a sparse summary. It does not establish that every expert carries a
+single concept.
 
 ### A targeted query recovers the same specialists
 
 Restricting the pursuit dictionary to number words independently recovers L15
 E03 and L14 E37 near the top, even on a different stored extraction. Their
-unrestricted lists above are already dominated by numerals and dates. This is
-useful convergent evidence that the specialization is not just a hand-picked
-token list.
+unrestricted lists above are already dominated by numerals and dates, so the two
+searches agree and the specialization is unlikely to be an artifact of the
+unrestricted token list.
 
 | Expert  | Top atoms from the numbers-only query | EVR@10 |
 | ------- | ------------------------------------- | -----: |
@@ -89,9 +86,8 @@ centered outputs vary across inputs.
 
 Across all 1,024 OLMoE experts, the first SOMP atom captures about **2×** the
 variance of the lens direction; ten atoms capture about **14×** as much. The
-absolute EVR nevertheless remains below 2%, reinforcing the main conclusion:
-some specialists are clear, but most expert outputs are only weakly aligned
-with a small set of vocabulary directions.
+absolute EVR nevertheless remains below 2%. A few specialists are clean; most
+expert outputs are only weakly aligned with a small set of vocabulary directions.
 
 ## Causal follow-up
 
@@ -102,6 +98,6 @@ proxy has no strong sparse handle.
 
 {% include figure.liquid path="assets/img/moe_atp_concepts.png" class="img-fluid rounded z-depth-1 my-3" alt="Gate attribution maps for countries, numbers, and an offensive-word concept" zoomable=true %}
 
-This follow-up is intentionally secondary: **Expert Pursuit generates readable
-hypotheses; causal gate interventions test which of those hypotheses actually
-change model behavior.**
+The causal study is secondary by design: Expert Pursuit produces readable
+hypotheses, and gate interventions test which of them actually change the
+output.

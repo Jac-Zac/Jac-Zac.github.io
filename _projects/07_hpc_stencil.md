@@ -10,7 +10,7 @@ code: https://github.com/Jac-Zac/HPC_Final_Project
 slides: https://canva.link/eyg24os7b2z8kkh
 ---
 
-An efficient and scalable 5-point stencil for 2D heat diffusion, implemented in C and parallelized with hybrid MPI + OpenMP. Each iteration updates every cell to a weighted average of its four neighbours (center 0.5, neighbours 0.125), with fixed sources injecting energy. The 5-point stencil has very low arithmetic intensity, which makes it memory-bound, so the memory bottleneck is the central concern throughout. Benchmarked on Cineca Leonardo and the Orfeo EPYC cluster, and validated against a Python reference for energy conservation.
+A 5-point stencil solver for 2D heat diffusion, written in C and parallelized with MPI + OpenMP. Each iteration updates every cell to a weighted average of its four neighbours (center 0.5, neighbours 0.125), with fixed sources injecting energy. Arithmetic intensity is very low, so the kernel is memory-bound and almost all of the optimization work goes into memory traffic. Benchmarked on Cineca Leonardo and the Orfeo EPYC cluster, and validated against a Python reference for energy conservation.
 
 {% include project_actions.liquid %}
 
@@ -25,7 +25,7 @@ _Five sources diffusing with periodic boundaries: heat leaving one edge re-enter
 | MPI strong scaling | 16.76× over 16 nodes (3 to 48 tasks)                       |
 | MPI weak scaling   | ~100% efficiency out to 48 tasks                           |
 
-## Initial code optimization
+## Single-thread optimization
 
 Two single-thread optimizations (10,000² grid, 100 iterations, Orfeo THIN partition):
 
@@ -59,4 +59,4 @@ Strong scaling (50,000² grid, 1000 iterations, 3 tasks per node, 8 threads per 
 
 ## Closing remarks
 
-Profile-guided optimization and huge pages were tested without benefit (cluster TLB miss rates are already low). MPI Cartesian topology, temporal blocking, and `MPI_Waitsome` on borders remain as future work. The main takeaway is to profile before optimizing and to profile on the machine that will run the code.
+Profile-guided optimization and huge pages were tested without benefit (cluster TLB miss rates are already low). MPI Cartesian topology, temporal blocking, and `MPI_Waitsome` on borders remain as future work. Every number above was measured on the hardware it describes.
